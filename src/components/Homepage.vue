@@ -44,10 +44,14 @@ export default{
     <div class="center">
         <ul>
             <li v-for="(item, index) in stockDetails">
-                <p>{{ item.itemName }}</p> 
-                <span>Price: {{ item.itemPrice }}</span> 
-                <span> Quantity: {{ item.itemQuantity }}</span>
-                <span v-if = "item.itemQuantity < 10"> (Running Low!) </span>
+                <div>
+                    <img v-bind:src="item.itemImage" width="200" height="150"
+                </div>
+                <div>
+                    <span>{{ item.itemName }}</span> &nbsp; &nbsp;
+                    <span> <button style="background-color: blueviolet; color: antiquewhite; border: blueviolet;">+</button></span>
+                </div>
+                <br/>
             </li>
         </ul> 
     </div>
