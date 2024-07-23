@@ -6,6 +6,7 @@ import Aboutus from "./../components/Aboutus.vue"
 import Cart from "./../components/Cart.vue"
 import ContactUs from "./../components/ContactUs.vue"
 import ServicesOffered from "./../components/ServicesOffered.vue"
+import ManageProducts from "./../components/ManageProducts.vue"
 const routes = [
     {
       path: '/',
@@ -36,7 +37,12 @@ const routes = [
         path: '/contactus',
         name: 'contactus',
         component: ContactUs,
-      },     
+      },
+      {
+        path: '/manageproducts',
+        name: 'manageproducts',
+        component: ManageProducts,
+      },        
 ]
 const router = createRouter({
   history: createWebHistory(),
